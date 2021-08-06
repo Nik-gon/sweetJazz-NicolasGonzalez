@@ -1,0 +1,797 @@
+@import "sass_componentes/colores";
+@import "sass_componentes/fuente";
+
+html{
+    font-size: 16px !important;
+    font-family: $franklin!important;
+}
+/*<----ESQUELETO PRICIPAL---->*/
+body{
+    background-image: url(../sass/fondo/fondo.jpg);
+}
+footer{
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(55,1,1,1) 100%, rgba(121,9,9,1) 100%);
+    height: auto;
+    width: 100%;
+    
+}
+div.pieDeFooter{
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: 100%;
+}
+p.tituloDeFooter{
+    color: white;
+    text-align: center;
+    /*position: relative;*/
+}
+p.contacto{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 2%;
+    a.iconLink{
+        text-decoration: none;
+        color:white ;
+    }
+    i.iconos{
+        transition: all 500ms ease;
+        padding: 2%;
+    }
+    i.iconos:hover{
+        color: $rosaorquidea;
+        transform: scale(1.2);
+    }
+}
+a.linkFooter{
+    color: rgb(241, 69, 69);
+    font-size: 16px;
+    font-style: normal;
+}
+a.linkFooter:hover{
+    color: white;
+}
+header{
+    background-color:black;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.links{
+   /*margin-right: 200px;
+   margin-top: 150px;*/
+   background-color:black;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+}     
+li{ 
+    font-size: 20px;
+    display: table-cell;
+    padding: 20px 60px;
+    width: 100%;
+}   
+a.linkHeader{
+  text-decoration: none;
+  color:$rojocarmin;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Titillium Web', sans-serif;
+}
+li:hover a{
+    color: floralwhite;
+}
+img.imagenLogo{
+    width: 100%;
+    height: 20vh;
+    transition: all 500ms ease;
+}
+img.imagenLogo:hover{
+    transform: scale(1.2);
+}
+nav.navSweetJazz{
+    background-color:black;
+}
+button.buttonSweetJazz{
+    color: cornsilk  !important;
+    border-color: rgb(241, 69, 69) !important;
+}
+/*---INDEX.html---*/
+main.mainIndex{
+    width: 100%;
+}
+section.sectionIndex1{
+    /*grid-area: sectionIndex1;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+section.sectionIndex2{
+    /*border: solid 1px red;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    div.divIndex2{
+        width: 35%;
+        height: auto;
+        color: rgb(218, 214, 183);
+        /*border: solid blue 1px;*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        div.divIndex2-0{
+            padding: 10px;
+            height: auto;
+            width: 100%;
+            /*border: solid pink 1px;*/
+            p.pIndex1{
+                width: 75%;
+                text-align: justify;
+            }
+        }
+    }
+}
+div.divIndex1{
+    color: $Titulo;
+    font-style: italic;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+img.imgIndex{
+    width: 90%;
+    height: 150vh;
+    margin-left: 5%;
+    border-radius: 5px;
+    box-shadow: 1px 10px 15px rgba(247, 247, 247, 0.5);
+}
+h2.h2Index{
+    color: rgb(218, 214, 183);
+    text-align: center;
+    width: 100%;
+}
+p.pIndex1{
+   color: rgb(218, 214, 183);
+   text-align: center;
+   width: 100%;
+   
+}
+section.sectionIndex3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 5% 0% 10%;
+    img.imgIndex-1{
+        height: 100vh;
+        width: 100%;
+    }
+}    
+section.sectionIndex3{
+    width: 100%;
+    /*border: solid red 1px;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+figure.figuresIndex{
+    transition: all 500ms ease;
+}
+figure.figuresIndex:hover{
+    transform: scale(1.2);
+}
+/*---NOSOTROS---*/
+main.maiNos{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    figure.figureNos{
+        margin-top: 3%;
+        margin-left: 10%;
+        width: 80%;
+        height: 20vh;
+        overflow: hidden;
+        transition: all 500ms ease;
+        border-radius: 5px;
+        box-shadow: 1px 10px 15px rgba(247, 247, 247, 0.5);
+      img.ImgNos{
+        width: 100%;
+        height: 500px;
+        transition: all 500ms ease;
+      }
+    }
+    div.divNosotros{
+        margin-left: 10%;
+        margin-block-end: 1%;
+        width: 80%;
+        background-color:rgba(76, 71, 71, 0.575) ;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        h2{
+            color:$rojocarmin;
+            font-size: 50px;
+      }
+        p.pNos{
+          color:rgb(218, 214, 183);
+          width: 50%;
+          text-align: justify;
+          align-self: center;
+        }
+        img.imgNos2{
+          width: 50%;
+          height: 50vh;
+          margin-left: 25%;
+        }
+    } 
+}
+/*------------------*/
+/*----CONTACTOS----*/
+.contenedor .form .formHeader .formTittle{
+    font-weight: normal;
+    font-family: $franklin;
+    color: $rojocarmin;
+    text-align: center;
+    padding: 14px 0;
+    span{
+        color: #fff;
+    }
+}
+.contenedor .form {
+    background: rgba(0,0,0,.6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+    .formLabel{
+        display: block;
+        color: $rojocarmin ;
+    }
+    .btn-form{
+        width: 100%;
+        outline: none;
+        background: $rojocarmin;
+        font-size: 16px;
+        border: none;
+        color:#fff;
+        padding: 15px 0;
+        cursor: pointer;
+    }
+    .btn-form:hover{
+        background: $rosaorquidea;
+    }
+}
+.contenedor .form .textareaForm{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px $rojociruela solid;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    font-family: Roboto;
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+input.inputForm{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px $rojociruela solid;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    font-family: Roboto;
+}
+/*SHOWS----------------------------------------------------------------------------*/
+/*section.sectionShows{
+    width: 100%;
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "Img1"
+    "Tabla"
+    "Img2";
+}*/
+/*--TABLA SHOWS--------------------------------------------------------------------------*/
+table.tableShows{
+    grid-area: Tabla;
+    background-color: black;
+    width: 100%;
+    border-collapse: collapse;
+    th.thShows{
+        color: red;
+        font-size: 30px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding: 20px;
+    }
+}
+td.trShow{
+    color:white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+    font-weight: bold;
+}
+tr:hover td{
+    background-color: rgb(58, 57, 57);
+    color: white;
+}
+/*---IMAGENES SHOW---*/
+figure.imgJazz0{
+    grid-area: Img1;
+    margin-top: 2%;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 10px 15px rgba(247, 247, 247, 0.5);
+}
+img.imgJazz1{
+    width: 100%;
+    height: 800px;
+    transition: all 500ms ease;
+}
+img.imgJazz1:hover{
+    transform: scale(1.2);
+}
+
+figure.imgJazz2{
+    grid-area: Img2;
+    margin-top: 2%;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 10px 15px rgba(247, 247, 247, 0.5);
+}
+img.imgJazz3{
+    width: 100%;
+    height: 800px;
+    transition: all 500ms ease;
+}    
+img.imgJazz3:hover{
+    transform: scale(1.2);
+}
+/*Musica----------------------*/
+/*section#carousel{
+    grid-area: carousel;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "textoCarousel textoCarousel"
+    "carousel2 carousel2";
+    div.divCarousel{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+  }*/
+  p.textoMusica2{
+    color: rgb(218, 214, 183);
+    text-align: center;
+    margin-top: 10%;
+    width: 90%;
+    text-align: justify;
+  }
+  img.imgCarousel{
+    width: 100%;
+    height: 70vh;
+    margin: 2%;
+  }
+  h2.h2Musica{
+       color: rgb(218, 214, 183);
+       text-align: center;
+       margin-top: 20%;
+   }
+  p.textoMusica{
+    color: rgb(218, 214, 183);
+    text-align: center;
+  }
+  p.textoMusica2{
+      color:rgb(218, 214, 183);
+      text-align: center;
+  }
+  iframe.spotify{
+    margin-top: 10%;
+  }
+@media screen and (max-width: 768px){
+    /*INDEX--------------------------------------------------------------------------
+  main.mainIndex{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-content:center;
+  }
+  section.sectionIndex1{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      div.divIndex1{
+          color: $Titulo;
+          font-style: italic;
+          font-size: 20px;
+          width: 45%;
+          text-align: center;
+      }
+  }
+  section.sectionIndex2{
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      div.divIndex2{
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      p.pIndex1{
+         color: rgb(218, 214, 183);
+         text-align: justify;
+         width: 100%;
+    }
+    img.imgIndex{
+    margin-left: 15%;
+    border-radius: 5px;
+    box-shadow: 1px 10px 15px rgba(247, 247, 247, 0.5);
+}
+  }
+
+  }    
+*/
+
+  section.sectionIndex3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 5% 0% 10%;
+    img.imgIndex-1{
+        height: 50vh;
+        width: 100%;
+    }
+}  
+  /*MUSICA-------------------------------------------------------------------------*/
+  /*section#carousel{
+  grid-area: carousel;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+  "textoCarousel textoCarousel"
+  "carousel2 carousel2";
+  div.divCarousel{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-content: center;
+  }
+}*/
+p.textoMusica2{
+  color: rgb(218, 214, 183);
+  text-align: center;
+  margin-top: 10%;
+  width: 90%;
+  text-align: justify;
+}
+img.imgCarousel{
+  width: 100%;
+  margin: 2%;
+}
+h2.h2Musica{
+     color: rgb(218, 214, 183);
+     text-align: center;
+     margin-top: 20%;
+ }
+p.textoMusica{
+  color: rgb(218, 214, 183);
+  text-align: center;
+}
+iframe.spotify{
+  margin-top: 10%;
+}
+/*--TABLA SHOWS--------------------------------------------------------------------------*/
+table.tableShows{
+    grid-area: Tabla;
+    background-color: black;
+    width: 100%;
+    border-collapse: collapse;
+    th.thShows{
+        color: red;
+        font-size: 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding: 2%;
+    }
+}
+td.trShow{
+    color:white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2%;
+    font-weight: bold;
+}
+tr:hover td{
+    background-color: rgb(58, 57, 57);
+    color: white;
+}
+}
+@media screen and (max-width: 992px){
+    /*INDEX--------------------------------------------------------------------------*/
+    main.mainIndex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content:center;
+    }
+    section.sectionIndex1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        div.divIndex1{
+            color: $Titulo;
+            font-style: italic;
+            font-size: 30px;
+            width: 60%;
+            text-align: center;
+        }
+    }
+    section.sectionIndex2{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        div.divIndex2{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        p.pIndex1{
+           color: rgb(218, 214, 183);
+           text-align: justify;
+      }
+    }
+        img.imgIndex{
+            margin-left: 25%;
+            border-radius: 5px;
+            box-shadow: 1px 10px 15px rgba(247, 247, 247, 0.5);
+        }
+    }  
+    /*CAROUSEL DE INDEX*/
+    section.sectionIndex3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 5% 0% 10%;
+        img.imgIndex-1{
+            height: 70vh;
+            width: 100%;
+        }
+    }
+    figure.figuresIndex{
+        transition: all 500ms ease;
+    }
+    figure.figuresIndex:hover{
+        transform: scale(1.2);
+    }
+    /*MUSICA-------------------------------------------------------------------------*/ 
+    /*section#carousel{
+        grid-area: carousel;
+        display: grid;
+        grid-template-columns: 40% 50%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "textoCarousel textoCarousel"
+        "carousel2 carousel2";
+        div.divCarousel{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+        }
+    }*/
+    p.textoMusica2{
+        color: rgb(218, 214, 183);
+        text-align: center;
+        margin-top: 10%;
+        width: 90%;
+        text-align: justify;
+    }
+    img.imgCarousel{
+        width: 100%;
+        margin: 2%;
+    }
+    h2.h2Musica{
+           color: rgb(218, 214, 183);
+           text-align: center;
+           margin-top: 20%;
+       }
+    p.textoMusica{
+        color: rgb(218, 214, 183);
+        text-align: center;
+    }
+    iframe.spotify{
+        margin-top: 10%;
+    }
+    /*--TABLA SHOWS--------------------------------------------------------------------------*/
+table.tableShows{
+    grid-area: Tabla;
+    background-color: black;
+    width: 100%;
+    border-collapse: collapse;
+    th.thShows{
+        color: red;
+        font-size: 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding: 2%;
+    }
+}
+td.trShow{
+    color:white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2%;
+    font-weight: bold;
+}
+tr:hover td{
+    background-color: rgb(58, 57, 57);
+    color: white;
+}
+}
+@media screen and (max-width: 1200px) {
+    /*INDEX--------------------------------------------------------------------------*/
+    main.mainIndex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content:center;
+    }
+    section.sectionIndex1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        div.divIndex1{
+            color: $Titulo;
+            font-style: italic;
+            font-size: 40px;
+            width: 60%;
+            text-align: center;
+        }
+    }
+    section.sectionIndex2{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        div.divIndex2{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        p.pIndex1{
+           color: rgb(218, 214, 183);
+           text-align: justify;
+      }
+    }
+        img.imgIndex{
+            margin-left: 32%;
+            border-radius: 5px;
+            box-shadow: 1px 10px 15px rgba(247, 247, 247, 0.5);
+        }
+    }  
+    /*CAROUSEL DE INDEX*/
+    section.sectionIndex3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 5% 0% 10%;
+        img.imgIndex-1{
+            height: 100vh;
+            width: 100%;
+        }
+    }
+    figure.figuresIndex{
+        transition: all 500ms ease;
+    }
+    figure.figuresIndex:hover{
+        transform: scale(1.2);
+    }
+    /*MUSICA-------------------------------------------------------------------------*/
+  /*section#carousel{
+    grid-area: carousel;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "textoCarousel textoCarousel"
+    "carousel2 carousel2";
+    div.divCarousel{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+  }*/
+p.textoMusica2{
+    color: rgb(218, 214, 183);
+    text-align: center;
+    margin-top: 10%;
+    width: 90%;
+    text-align: justify;
+}
+
+img.imgCarousel{
+    width: 90%;
+    height: 50vh;
+}
+h2.h2Musica{
+       color: rgb(218, 214, 183);
+       text-align: center;
+       margin-top: 20%;
+   }
+p.textoMusica{
+    color: rgb(218, 214, 183);
+    text-align: center;
+}
+iframe.spotify{
+    margin-top: 10%;
+}
+}
